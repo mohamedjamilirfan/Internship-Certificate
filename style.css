@@ -1,0 +1,252 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.container {
+  width: 810px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border: 1.5px solid #cb303c;
+  padding: 25px 20px;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #363263;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 16px;
+  color: #363263;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 30px;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+#image-container img {
+  width: 400px;
+  /* border: 1.5px solid #cb303c; */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#certificate-details.verified-box {
+  background: #ffffff;
+  color: #cb303c;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 370px;
+  position: relative;
+}
+
+.verified-badge {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  background-color: #cb303c;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 14px 6px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 0 8px rgba(203, 48, 60, 0.5);
+}
+
+.verified-badge svg {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.details-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-row strong {
+  font-weight: 700;
+  color: #cb303c;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.details-row span {
+  color: #363263;
+  font-size: 15px;
+}
+
+#download-container {
+  margin-top: 20px;
+}
+
+.download-btn {
+  background-color: #cb303c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 20px rgba(203, 48, 60, 0.3);
+  display: inline-block;
+  text-align: center;
+}
+
+.download-btn:hover {
+  background-color: #a52630;
+  box-shadow: 0 8px 25px rgba(203, 48, 60, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  #image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #image-container img {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #certificate-details.verified-box {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  #certificate-details.verified-box {
+    padding: 24px;
+    box-sizing: border-box; /* ensures padding is included in total width */
+  }
+
+  .verified-badge {
+    font-size: 10px;
+    padding: 5px 10px;
+    gap: 4px;
+    top: 26px;
+    right: 12px;
+  }
+
+  .details-row strong {
+    font-size: 14px;
+  }
+
+  .details-row span {
+    font-size: 13px;
+  }
+
+  .download-btn {
+    /* width: 100%; */
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 15px 10px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .container p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  #image-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #certificate-details h2 {
+    font-size: 18px;
+  }
+
+  #certificate-details.verified-box {
+    padding: 24px;
+    box-sizing: border-box; /* ensures padding is included in total width */
+  }
+
+  .verified-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    top: 25px;
+    right: 10px;
+  }
+
+  .verified-badge svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .details-row strong {
+    font-size: 13px;
+  }
+
+  .details-row span {
+    font-size: 12px;
+  }
+
+  .download-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
